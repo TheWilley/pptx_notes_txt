@@ -22,6 +22,7 @@ Options:
   -o, --output TEXT  The path to the output file.  [required]
   -p, --prettyprint  Write the text in a pretty format.
   -md, --markdown    Write the text in a markdown format.
+  -c, --custom TEXT  The path to a custom format file.
   --help             Show this message and exit.
 python pptx_notes_txt.py -i <inputfile> -o <outputfile>
 ```

@@ -14,7 +14,7 @@ import xml.etree.ElementTree as ET
 @click.option('-o', '--output', help='The path to the output file.', required=True, type=str)
 @click.option('-p', '--prettyprint', is_flag=True, help='Write the text in a pretty format.')
 @click.option('-md', '--markdown', is_flag=True, help='Write the text in a markdown format.')
-@click.option('-c', '--custom', help='Write the text in a custom format using a \'.custom\' file', type=str)
+@click.option('-c', '--custom', help='The path to a custom format file.', type=str)
 def main(input, output, prettyprint, markdown, custom):
     """Script to extract the notes from a pptx file and write them to a text file."""
 
