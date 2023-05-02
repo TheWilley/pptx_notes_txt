@@ -111,6 +111,7 @@ def main(input, output, prettyprint, markdown, custom):
                     else:
                         f.write('\n\n')
 
+            # Mode is custom
             elif custom:
                 # Check if the custom file is empty
                 if custom is None:
@@ -155,5 +156,6 @@ def main(input, output, prettyprint, markdown, custom):
     
     # Print success message
     click.echo('Successfully wrote the notes to \'' + output + '\'')
+
 if __name__ == '__main__':
     main()
