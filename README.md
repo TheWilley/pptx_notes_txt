@@ -1,4 +1,4 @@
-# ppt_notes_txt
+# pptx_notes_txt
 A simple python script to extract notes from a powerpoint presentation and save them to a text file.
 
 ## Requirements
@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ## Usage
 
 ```
-Usage: ppt_notes_txt.py [OPTIONS]
+Usage: pptx_notes_txt.py [OPTIONS]
 
   Script to extract the notes from a pptx file and write them to a text file.
 
@@ -23,13 +23,13 @@ Options:
   -p, --prettyprint  Write the text in a pretty format.
   -md, --markdown    Write the text in a markdown format.
   --help             Show this message and exit.
-python ppt_notes_txt.py -i <inputfile> -o <outputfile>
+python pptx_notes_txt.py -i <inputfile> -o <outputfile>
 ```
 
 ### Try it out
 Go to the root directory of the project and run the following command:
 ```
-python ppt_notes_txt.py -i ./test/Presentation.pptx -o ./test/notes.txt -p
+python pptx_notes_txt.py -i ./test/Presentation.pptx -o ./test/notes.txt -p
 ```
 
 ### Formats
@@ -45,7 +45,7 @@ A custom format can also be specified by creating a file with the `.custom` exte
 
 You can try it out with the following command:
 ```
-python ppt_notes_txt.py -i ./test/Presentation.pptx -o ./test/notes.txt -c ./test/myformat.custom
+python pptx_notes_txt.py -i ./test/Presentation.pptx -o ./test/notes.txt -c ./test/myformat.custom
 ```
 
 Which yeilds the following output:
