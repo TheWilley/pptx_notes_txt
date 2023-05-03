@@ -91,7 +91,8 @@ def main(input, output, prettyprint, markdown, custom):
             # Mode is prettyprint
             if prettyprint:
                 for page in pages:
-                    f.write('Page ' + str(pages.index(page) + 1) + '\n' + '---------------\n\n')
+                    f.write('Page ' + str(pages.index(page) + 1) + '\n')
+                    f.write('-' * len('Page ' + str(pages.index(page) + 1)) + '\n\n')
                     f.write(page)
 
                     # If its the last page, don't add a new line
