@@ -8,6 +8,7 @@
 import click
 import zipfile
 import xml.etree.ElementTree as ET
+import os
 
 @click.command()
 @click.option('-i', '--input', default=None, help='The path to the pptx file.', required=True, type=str)
@@ -155,7 +156,7 @@ def main(input, output, prettyprint, markdown, custom):
         exit(0)
     
     # Print success message
-    click.echo('Successfully wrote the notes to \'' + output + '\'')
+    click.echo('Successfully wrote the notes to \'' + os.path.abspath(output) + '\'')
 
 if __name__ == '__main__':
     main()
