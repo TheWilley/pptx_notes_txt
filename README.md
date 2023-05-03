@@ -24,13 +24,15 @@ Options:
   -md, --markdown    Write the text in a markdown format.
   -c, --custom TEXT  The path to a custom format file.
   --help             Show this message and exit.
-python pptx_notes_txt.py -i <inputfile> -o <outputfile>
+
+Example:
+  python3 pptx_notes_txt.py -i <inputfile> -o <outputfile>
 ```
 
 ### Try it out
 Go to the root directory of the project and run the following command:
 ```
-python pptx_notes_txt.py -i ./test/Presentation.pptx -o ./test/notes.txt -p
+python3 pptx_notes_txt.py -i ./test/Presentation.pptx -o ./test/notes.txt -p
 ```
 
 ### Formats
@@ -46,7 +48,7 @@ A custom format can also be specified by creating a file with the `.custom` exte
 
 You can try it out with the following command:
 ```
-python pptx_notes_txt.py -i ./test/Presentation.pptx -o ./test/notes.txt -c ./test/myformat.custom
+python3 pptx_notes_txt.py -i ./test/Presentation.pptx -o ./test/notes.txt -c ./test/myformat.custom
 ```
 
 Which yeilds the following output:
